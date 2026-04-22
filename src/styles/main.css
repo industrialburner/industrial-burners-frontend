@@ -643,8 +643,8 @@ body {
 /* WhatsApp Button */
 .whatsapp-btn {
   position: fixed;
-  bottom: 180px;
-  right: 30px;
+  bottom: 100px;
+  right: 20px;
   z-index: 200;
   width: 56px;
   height: 56px;
