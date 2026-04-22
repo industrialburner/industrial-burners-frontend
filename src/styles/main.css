@@ -93,31 +93,6 @@ body {
   }
 }
 
-/* Crisp Chat Animation */
-.crisp-client {
-  animation: crispFadeIn 0.5s ease-out, crispPulse 3s ease-in-out infinite 0.5s;
-}
-
-@keyframes crispFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes crispPulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
 @keyframes slideDown {
   from {
     opacity: 0;
