@@ -418,7 +418,7 @@ body {
 /* WhatsApp Button */
 .whatsapp-btn {
   position: fixed;
-  bottom: 150px;
+  bottom: 180px;
   right: 30px;
   z-index: 200;
   width: 56px;
