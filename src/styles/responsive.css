@@ -1,0 +1,139 @@
+/* ========================================
+   RESPONSIVE CSS
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .container {
+    padding: 0 24px;
+  }
+  
+  nav {
+    padding: 16px 24px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .hero {
+    padding: 100px 24px 60px;
+  }
+  
+  .hero-stats {
+    display: none;
+  }
+  
+  .section {
+    padding: 70px 0;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .applications-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 30px 24px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero-sub {
+    font-size: 15px;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .category-tabs {
+    flex-direction: column;
+  }
+  
+  .cat-tab {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+  
+  .whatsapp-btn {
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .product-name {
+    font-size: 24px;
+  }
+}
