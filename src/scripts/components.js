@@ -12,17 +12,17 @@ const navbarHTML = `
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact" class="nav-cta">Get Quote</a></li>
   </ul>
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+  <div class="hamburger" id="hamburger">
     <span></span>
     <span></span>
     <span></span>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#products" onclick="closeMenu()">Products</a>
-    <a href="#applications" onclick="closeMenu()">Applications</a>
-    <a href="#faq" onclick="closeMenu()">FAQ</a>
-    <a href="#contact" class="mobile-cta" onclick="closeMenu()">Get Quote</a>
+    <a href="#about" data-menu-link>About</a>
+    <a href="#products" data-menu-link>Products</a>
+    <a href="#applications" data-menu-link>Applications</a>
+    <a href="#faq" data-menu-link>FAQ</a>
+    <a href="#contact" class="mobile-cta" data-menu-link>Get Quote</a>
   </div>
 `;
 
@@ -43,6 +43,18 @@ document.addEventListener('DOMContentLoaded', function() {
   const navbar = document.getElementById('navbar');
   if (navbar) {
     navbar.innerHTML = navbarHTML;
+    
+    // Add hamburger click listener
+    const hamburger = document.getElementById('hamburger');
+    if (hamburger) {
+      hamburger.addEventListener('click', toggleMenu);
+    }
+    
+    // Add mobile menu link click listeners
+    const menuLinks = document.querySelectorAll('[data-menu-link]');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
   }
   
   // Load Footer
